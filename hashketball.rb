@@ -121,7 +121,7 @@ def game_hash
           :slam_dunks => 12
         }
         ]
-    } #:away }
+    }
   }
   game_hash
 end
