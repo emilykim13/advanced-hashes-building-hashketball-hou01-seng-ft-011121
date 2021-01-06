@@ -123,4 +123,5 @@ def game_hash
         ]
     } #:away }
   }
-    
+  game_hash
+end
