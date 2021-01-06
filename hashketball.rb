@@ -120,7 +120,7 @@ def game_hash
           :blocks => 5,
           :slam_dunks => 12
         }
-        [
+        ] # closing for :players
     } 
   } 
   game_hash
