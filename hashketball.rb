@@ -252,16 +252,3 @@ def winning_team
   end
   team_one > team_two ? "Brooklyn Nets" : "Charlotte Hornets"
 end
-
-def player_with_longest_name
-  longest_name = ""
-  game_hash.each do |location, team_data|
-    team_data[:players].each do |data_item|
-      if data_item[:player_name].length > longest_name.length
-        longest_name = data_item[:player_name]
-      end
-    end
-  end
-  return longest_name
-end
-
