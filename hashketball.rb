@@ -118,36 +118,3 @@ def game_hash
   game_hash
 end
 
-def num_points_scored(search_player)
-  game_hash.each do |team,team_info|
-    team_info[:players].each do |player|
-      if player[:player_name] == search_player
-        return player[:points]
-      end
-    end
-  end
-end
-
-def shoe_size(name)
-  game_hash.each do |team, team_info|
-    team_info[:players].each do |player|
-      if player[:player_name] == name
-        return player[:shoe]
-      end
-    end
-  end
-end
-
-def team_colors(team)
-  if team == "Brooklyn Nets"
-    return game_hash[:home][:colors]
-  else
-    return game_hash[:away][:colors]
-  end
-end
-
-def team_names
-  game_hash.map do |team, team_info|
-    team_info[:team_name]
-  end
-end
